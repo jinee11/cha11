@@ -1,0 +1,64 @@
+@import url(reset.css);
+
+body {
+   height: 100vh;
+}
+.container {
+   /* 별 역할을 없는데 헤더 섹션 등 묶어줌 */
+   border: 1px solid #000;
+}
+header {
+   background-color: aquamarine;
+
+   /* 패딩 2em하니까 수직 가운데 정렬됨 */
+   /* padding: 2em;  */
+   height: 150px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+}
+.header_logo {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.header_logo>img {
+   display: block;
+}
+nav {
+   border: 1px solid rgb(255, 0, 0);
+   height: 40px;
+   flex: 1;
+   background-color: blue;
+}
+section {
+   border: 1px solid rgb(255, 0, 0);
+
+   /* 가로로 붙을 태그의 부모한테 플렉스 속성 부여 */
+   display: flex;
+}
+
+/* 공통 특성은 태그 모아서 넣기 */
+aside1, article, aside2 {
+   border: 1px solid #000;
+   box-sizing: border-box;
+   height: 900px;
+
+}
+.aside1 {
+   flex: 1;
+}
+article {
+   flex: 3;
+}
+.aside2 {
+   flex: 1;
+}
+footer {
+   background-color: aquamarine;
+
+   height: 190px;
+   text-align: center;
+}
